@@ -1,0 +1,21 @@
+{{!-- views/appointment.handlebars --}}
+<h2>Appointment Details</h2>
+
+<form id="addAppointmentForm">
+  <label for="appointmentDate">Appointment Date:</label>
+  <input type="datetime-local" id="appointmentDate" name="appointmentDate" required>
+
+  <label for="notes">Notes:</label>
+  <textarea id="notes" name="notes"></textarea>
+
+  <button type="submit">Add Appointment</button>
+</form>
+
+<ul id="appointmentList">
+  {{#each appointments}}
+    <li>
+      <span>{{this.appointmentDate}}</span>
+      <button class="deleteAppointment" data-id="{{this.id}}">Delete</button>
+    </li>
+  {{/each}}
+</ul>

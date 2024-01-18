@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "Marcos",
+    "password": "123456789",
+    "database": "baby_medical_track",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "Marcos",
+    "password": "123456789",
+    "database": "baby_medical_track",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "Marcos",
+    "password": "123456789",
+    "database": "baby_medical_track",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}

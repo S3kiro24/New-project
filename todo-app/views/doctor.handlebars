@@ -1,0 +1,24 @@
+{{!-- views/doctor.handlebars --}}
+<h2>Doctor Details</h2>
+
+<form id="addDoctorForm">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="specialization">Specialization:</label>
+  <input type="text" id="specialization" name="specialization">
+
+  <label for="contactNumber">Contact Number:</label>
+  <input type="tel" id="contactNumber" name="contactNumber">
+
+  <button type="submit">Add Doctor</button>
+</form>
+
+<ul id="doctorList">
+  {{#each doctors}}
+    <li>
+      <span>{{this.name}}</span>
+      <button class="deleteDoctor" data-id="{{this.id}}">Delete</button>
+    </li>
+  {{/each}}
+</ul>
